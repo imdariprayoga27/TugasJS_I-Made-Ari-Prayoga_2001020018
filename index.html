@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Tugas JavaScript Pemrograman WEB
+    </title>
+
+    <!--Menghubungkan dengan css-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>NIM :</label>
+                        <input type="text" name="nim" id="nim" placeholder="Masukan NIM Anda">
+                    </div>
+                    <div>
+                        <label>Nama :*</label><label class="validation-error hide" id="nameValidationError">This field is required.</label>
+                        <input type="text" name="name" id="name" placeholder="Masukan Nama Anda">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Save">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="student">
+                    <thead>
+                        <tr>
+                            <th>NIM</th>
+                            <th>Nama</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Menghubungkan dengan JavaScript-->
+    <script src="script.js"></script>
+</body>
+
+</html>
